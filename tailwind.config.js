@@ -7,9 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        caslon: ['"Caslon"', "serif"],
+        montserrat: ['"Montserrat"', "sans-serif"],
+      },
       colors: {
         primary: 'rgb(var(--color-primary)/<alpha-value>)',
         secondary: 'rgb(var(--color-secondary)/<alpha-value>)',
+        accent: 'rgb(var(--color-accent)/<alpha-value>)',
       },
       minHeight: {
           v10: "10vh",

@@ -19,7 +19,7 @@ const House = ({ params: { hid } }: Params) => {
   if (!house) return <div>Nothing to see here</div>;
 
   return (
-    <main>
+    <>
       <section
         style={{ backgroundImage: `url(${house.heroBg})` }}
         className="bg-cover w-screen h-screen flex flex-col justify-center text-center items-center"
@@ -55,7 +55,7 @@ const House = ({ params: { hid } }: Params) => {
           />
         </div>
       </section>
-    </main>
+    </>
   );
 };
 

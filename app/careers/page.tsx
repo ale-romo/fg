@@ -1,117 +1,69 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
+import ButtonB from "@/components/ButtonB";
 
 const positions = [
   {
     title: "Data Science Engineer, Geospatial",
-    img: "https://loremflickr.com/400/400/cats",
     date: "09/25/2023",
     type: "Fixed Term",
     department: "Sales_Chepi_Channel",
     location: "Asia -  Mainland China - Beijing",
-    fb: "https://facebook.com",
-    tw: "https://twitter.com",
-    li: "http://linkedin.com",
+    btnText: "Coming soon"
   },
   {
     title: "Data Science Engineer, Geospatial",
-    img: "https://loremflickr.com/400/400/cats",
     date: "09/25/2023",
     type: "Fixed Term",
     department: "Sales_Chepi_Channel",
     location: "Asia -  Mainland China - Beijing",
-    fb: "https://facebook.com",
-    tw: "https://twitter.com",
-    li: "http://linkedin.com",
+    btnText: "Coming soon"
+  },
+  {
+    title: "Data Science Engineer, Geospatial",
+    date: "09/25/2023",
+    type: "Fixed Term",
+    department: "Sales_Chepi_Channel",
+    location: "Asia -  Mainland China - Beijing",
+    btnText: "Coming soon"
   },
 ];
 
 const Careers = () => {
   return (
-    <main>
-      <section
-        className="h-v40 w-screen flex flex-row items-center justify-center bg-center"
-        style={{
-          backgroundImage: "url(https://loremflickr.com/1300/900/careers)",
-        }}
-      >
-        <h1 className="text-white">Join Us</h1>
-      </section>
+    <>
+      <Hero bg="/careers/hero.webp">
+        <h1>Join us</h1>
+      </Hero>
 
-      <section className="bg-white flex flex-col items-center py-20 justify-center">
-        <p className="w-5/6 md:w-1/2 text-xl pb-16 text-center font-semibold">
-          Fast-paced, disruptive, and family-oriented—that&#39;s how we describe
-          ourselves at Falic Group. If you&#39;re a dynamic team player looking
-          to exceed your potential, we want to hear from you. At Falic Group,
-          we&#39;re committed to providing our employees with the best work-
-          life experience and career development, which is why so many of our
-          team members have been with us for years and decades. Ready to join
-          our Falic Group family? Keep an eye out for exciting career
-          opportunities in global and in-market operations, supply chain,
-          retail, finance, creative, marketing, public relations and e-Commerce.
+      <section className="bg-primary text-white flex flex-col gap-8 items-center py-20 justify-center">
+        <h3 className="text-center text-2xl max-w-screen-xl">Fast-paced, disruptive and family-oriented.</h3>
+        <p className="w-5/6 lg:w-2/3 text-lg text-center max-w-screen-x">
+          That&apos;s how we describe ourselves at Falic Group. If you&apos;re a dynamic team player looking to exceed your potential, we want to hear from you.
+        </p>
+        <p className="w-5/6 lg:w-2/3 text-lg text-center max-w-screen-x">
+          At Falic Group, we&apos;re committed to providing our employees with the best work-life experience and career development, which is why so many of our team members have been with us for years and decades. Ready to join our Falic Group family? Keep an eye out for exciting career opportunities in global and in-market operations, supply chain, retail, finance, creative, marketing, public relations and e-Commerce.
         </p>
       </section>
 
-      <section className="bg-secondary p-10 md:p20">
-        <ul className="flex flex-col">
+      <section className="bg-secondary p-10 pb-0 md:p-20 md:pb-0 flex flex-col items-center">
+        <h3 className="flex text-center border-black border-b-2 leading-8 mb-8">Career opportunities</h3>
+        {/* <ul className="flex flex-col lg:flex-row gap-y-3 w-full max-w-screen-xl">
           {positions.map((position, i) => (
             <li
               key={i}
-              className={`${
-                i % 2 === 0 ? "bg-white" : "bg-secondary"
-              } w-full flex items-stretch justify-between`}
+              className="w-full lg:w-1/3 flex flex-col"
             >
-              <Image
-                src={position.img}
-                width="400"
-                height="400"
-                alt={position.title}
-              />
-              <div className={`flex flex-col justify-between w-3/4 p-10`}>
-                <div>
-                  <p>{position.date}</p>
-                  <h3>{position.title}</h3>
-                </div>
-                <div>
-                  <p>
-                    {position.type}
-                    <br />
-                    {position.department}
-                    <br />
-                    {position.location}
-                  </p>
-                </div>
-              </div>
-              <div className="w-1/4 flex p-10 justify-end">
-                <a href={position.fb} title="facebook">
-                  <Image
-                    src="/icons/facebook_black.svg"
-                    alt="facebook"
-                    width={30}
-                    height={30}
-                  />
-                </a>
-                <a href={position.tw} title="twitter">
-                  <Image
-                    src="/icons/twitter_black.svg"
-                    alt="twitter"
-                    width={30}
-                    height={30}
-                  />
-                </a>
-                <a href={position.li} title="linkedIn">
-                  <Image
-                    src="/icons/linkedIn_black.svg"
-                    alt="linkedin"
-                    width={30}
-                    height={30}
-                  />
-                </a>
+              <div className="bg-primary text-white px-6 py-20 mx-2 text-center font-montserrat">
+                <ButtonB href="/careers">{position.btnText}</ButtonB>
               </div>
             </li>
           ))}
-        </ul>
+        </ul> */}
+        <p>
+          LOOKING FOR A CAREER WITH FALIC GROUP? CONTACT US AT <a href="mailto:hello@falicgroup.com" className="underline uppercase font-semibold hover:text-primary">HELLO@FALICGGROUP.COM</a>
+        </p>
       </section>
-    </main>
+    </>
   );
 };
 

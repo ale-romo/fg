@@ -4,15 +4,31 @@
 
 @layer base {
   :root {
-    --color-primary: 184 141 89;
-    --color-secondary: 251 246 240;
+    --color-primary: 177 143 97;
+    --color-secondary: 235 223 221;
+    --color-accent: 10 24 49;
+
     /* ... */
   }
+}
+
+@font-face {
+  font-family: "Caslon";
+  src: url('../public/fonts/Caslon540LTStd-Roman.woff2');
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url('../public/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+html {
+  font-size: 20px;
 }
 
 * {
   color: inherit;
   border-color: inherit;
+  font-family: Caslon;
 }
 
 a {
@@ -20,15 +36,54 @@ a {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: normal;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 3.5rem;
+  }
 }
+
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  padding-bottom: 1.5rem;
+  margin-bottom: 0;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 2.1rem;
+  }
 }
+
 h3 {
   font-size: 1.2rem;
+  font-weight: 500;
   text-transform: uppercase;
+  font-family: "Montserrat";
+}
+
+.home-padded > div:first-child {
+  padding-top: 4rem;
+  @media screen and (min-width: 768px) {
+    padding-top: 12rem;
+  }
+}
+.home-padded > div:last-child {
+  padding-bottom: 8rem;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 4rem;
+  }
+}
+
+.home-padded > div, .home-padded > div:first-child, .home-padded > div:last-child {
+  @media screen and (min-width: 1024px) {
+    padding-top: 15rem;
+    padding-bottom: 8rem;
+  }
+}
+.fixedDom {
+  height: 100vh;
+  overflow: hidden;
+  max-height: 100vh;
 }
