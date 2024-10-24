@@ -12,7 +12,7 @@ const content = {
   },
   we: {
     title: "Who we are",
-    text: "Renowned for its unrivalled global expertise and commitment to excellence, the Falic Group founded in 2001 is a family run group and operates 50 prestigious businesses across 9 houses; retail, wines & spirits, fragrance & cosmetics, fashion & interiors, real estate & hospitality, media, distribution, tobacco & other activities. With over 6,000 employees spanning 21 countries, their global eco-system encompasses 250+ retail and e-Commerce stores. ",
+    text: "Renowned for its unparalleled global expertise and commitment to excellence, the Falic Group was founded in 2001 as a family-run organisation operating businesses across nine sectors: retail, wines & spirits, fragrance & cosmetics, fashion, interiors & licensing, real estate & hospitality, media, distribution, tobacco, and other activities. With a diverse team of over 6,000 employees spanning more than 21 countries, our global ecosystem includes more than 250 retail and e-commerce stores.",
     img: "/homepage/we.webp",
   },
   houses: {

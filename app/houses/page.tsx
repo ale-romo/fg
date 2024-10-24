@@ -15,7 +15,7 @@ const data = {
   houses: [
     {
       title: "Retail",
-      desc: "Combining legacy and innovation, Duty Free Americas is our mothership. As the leading and largest luxury travel retailer in the Western Hemisphere, DFA operates e-Commerce and over 250 stores in the United States and internationally at major airports, seaports and borders. Our future is our digital retail innovations BlockBar, a global blockchain based wines and spirits marketplace and Paneco, the largest e-commerce delivery platform in Singapore and Israel.",
+      desc: "Duty Free Americas combines legacy and innovation as our flagship brand. As the largest travel retailer in the Americas, DFA operates over 250 stores and a e-commerce platform across the United States and internationally at major airports, seaports, train and border locations. Our future is driven by digital retail innovations like BlockBar, a global blockchain-based marketplace for wines and spirits, and Paneco, the leading e-commerce delivery platform in Singapore and Israel.",
       images: [
         "/houses/retail-1.webp",
         "/houses/retail-2.webp",
@@ -24,7 +24,7 @@ const data = {
     },
     {
       title: "Wines & Spirits",
-      desc: "Expertise and exceptional terroir are the hallmarks of our own prestigious estates from Psagot Winery to Bearhug and Gila Tequila. We are also the trusted distribution and retail partner for the world’s most recognised wine and spirits producers, all of whom encompass exceptional craftsmanship, taste and storytelling.",
+      desc: "Expertise and exceptional terroir define our prestigious estates, from Psagot Winery to Bearhug and Gila Tequila. We are also the trusted distribution and retail partner for the world’s most recognised wine and spirits producers, each embodying exceptional craftsmanship, quality and storytelling.",
       images: [
         "/houses/wines-1.webp",
         "/houses/wines-2.webp",
@@ -33,7 +33,7 @@ const data = {
     },
     {
       title: "Fragance & cosmetics",
-      desc: "Heritage meets vogue with our collection of owned iconic fragrance, cosmetics and hair care brands including Perry Ellis, Hard Candy and HeadKandy. We are renowned for developing fragrances for fashion, celebrity and lifestyle brands, and delivering an expert beauty concierge in our retail stores. We also collaborate with historic houses and emerging niche cosmetics brands to grow their distribution worldwide.",
+      desc: "Heritage meets modernity in our collection of iconic fragrance, cosmetics, and hair care brands, including Perry Ellis, Hard Candy, and HeadKandy. We are celebrated for crafting distinctive fragrances for fashion, celebrity, and lifestyle brands, while providing an expert beauty concierge experience in our retail stores. Additionally, we collaborate with both historic houses and emerging niche cosmetics brands to expand their distribution on a global scale.",
       images: [
         "/houses/fragance-1.webp",
         "/houses/fragance-2.webp",
@@ -42,7 +42,7 @@ const data = {
     },
     {
       title: "Fashion & interiors",
-      desc: "Home to legacy names, from Christian Lacroix and Reebok LATAM to Divano Mobilia, our Fashion & Interiors house is focused on exceptional craftsmanship, innovation and high-end design. From red carpets to designer home furnishings, partners of Falic Group in the fashion and interior space offer refinement and undisputed style. ",
+      desc: "Home to iconic brands such as Christian Lacroix, Reebok LATAM, Fendi Casa and Divano Mobilia, our Fashion &amp; Interiors division is dedicated to exceptional craftsmanship, innovation, and high-end design. From glamorous red carpets to exquisite home furnishings, our partners at Falic Group embody refinement and undeniable style. We also specialise in retail licensing, ensuring that these legacy names reach a wider audience while maintaining their prestigious reputation across LATAM.",
       images: [
         "/houses/fashion-1.webp",
         "/houses/fashion-2.webp",
@@ -51,7 +51,7 @@ const data = {
     },
     {
       title: "Real Estate & Hospitality",
-      desc: "Falic Group owns a number of regional hotels, bars and restaurants in the United States and Latin America including the W Hotel Panama and Condado Plaza Hotel, Puerto Rico. A place to meet, rest and play.",
+      desc: "Falic Group proudly owns a selection of regional hotels, bars, and restaurants across the United States and Latin America, including the W Hotel Panama and the Condado Plaza Hotel in Puerto Rico. These destinations offer vibrant spaces to meet, unwind, and enjoy unforgettable experiences.",
       images: [
         "/houses/re-1.webp",
         "/houses/re-2.webp",
@@ -60,7 +60,7 @@ const data = {
     },
     {
       title: "Media",
-      desc: "Falic Group proudly operates a number of leading regional news networks that connect people, place and business. The largest network includes Bloomberg Línea partnering with the world’s largest lifestyle brands to share their campaigns to 5 million+ users and 1M +social media followers across LATAM.",
+      desc: "Falic Group proudly operates several prominent regional news networks that connect people, places, and businesses. Our largest network, Bloomberg Línea, partners with the world’s leading lifestyle brands to share their campaigns with over 5 million monthly users and more than 1 million social media followers across Latin America.",
       images: [
         "/houses/media-1.webp",
         "/houses/media-2.webp",
@@ -69,7 +69,7 @@ const data = {
     },
     {
       title: "Distribution",
-      desc: "Leaders in innovative distribution solutions for the United States and Latin American markets, Falic Group holds more than 30 distribution centres across 4  continents, not only in duty free, but supplying duty paid operations, retail goods, fashion, furniture, alcohol distribution, cruise ships and fragrances.",
+      desc: "As leaders in innovative distribution solutions for the United States and Latin American markets, Falic Group operates over 30 distribution centres across four continents. Our extensive network not only supports duty-free operations but also supplies duty-paid goods, retail merchandise, fashion, furniture, alcohol, cruise ships, and fragrances.",
       images: [
         "/houses/distribution-1.webp",
         "/houses/distribution-2.webp",
@@ -78,7 +78,7 @@ const data = {
     },
     {
       title: "Tobacco",
-      desc: "Through Duty Free Americas, Falic Group has become a major player in the tobacco industry in the United States and Latin America.",
+      desc: "Through Duty Free Americas, Falic Group has established itself as a key player in the tobacco industry across the United States and Latin America.",
       images: [
         "/houses/tobacco-1.webp",
         "/houses/tobacco-2.webp",
@@ -87,7 +87,7 @@ const data = {
     },
     {
       title: "Other activities",
-      desc: "Falic Group proudly operates a number of diverse businesses including medical supplies, payment cards and gas stations.",
+      desc: "Falic Group proudly operates a diverse range of businesses, including medical supplies, payment card services, and gas stations.",
       images: [
         "/houses/other-1.webp",
         "/houses/other-2.webp",

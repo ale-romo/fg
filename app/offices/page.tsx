@@ -64,7 +64,7 @@ const offices = [
 
 const where = {
   title: "Where are we?",
-  desc: "Falic Group is headquartered in Miami, Florida, and has offices in Bogota, London, Los Angeles, Macau, Mexico City, Montevideo, New York, Panama City, Paris, Punta Cana, Rio de Janeiro, San Juan, Singapore, and Tel Aviv. The group employs over 6,000 people worldwide.",
+  desc: "Falic Group is headquartered in Miami, Florida, with a strong international presence that includes offices in Bogota, London, Los Angeles, Macau, Mexico City, Montevideo, New York, Panama City, Paris, Punta Cana, Rio de Janeiro, San Juan, Singapore, and Tel Aviv. Our diverse team of over 6,000 individuals worldwide drives our commitment to excellence and innovation across all markets.",
   img: "/offices/building.webp",
   reverse: true,
 }

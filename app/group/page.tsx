@@ -35,17 +35,17 @@ const values = [
   {
     img: "/group/collaborative.webp",
     title: "A collaborative approach",
-    description: `Falic Group’s experienced team works hard to forge partnerships that achieve results, working collaboratively with brands to achieve success at every turn. From logistics and operations, to sales, marketing, product innovation and client support, Falic Group’s collaborative, forward-thinking approach is renowned worldwide.`,
+    description: `At Falic Group, our experienced team is dedicated to forging partnerships that drive results. We work hand-in-hand with brands to ensure success. From logistics and operations to sales, marketing, product innovation, and client support, our collaborative, forward-thinking approach is recognised globally.`,
   },
   {
     img: "/group/visionary.webp",
     title: "Visionary & Growth",
-    description: `Combining visionary spirit with a fast-paced growth mindset, Falic Group is focused on developing future-proof business strategies and new revenue streams, from the Western Hemisphere to Asia. Our business strategies are carefully designed to target a new breed of young luxury consumers, a group that is projected to make up 80% of global purchases by 2030*.<br/>*Bain & Company Report, 2023`,
+    description: `Falic Group embodies a visionary spirit paired with a growth-oriented mindset, dedicated to developing future-proof business strategies and new revenue streams across the world. We strategically target a new generation of luxury consumers, projected to represent 80% of global purchases by 2030*.<br/>*Source: Bain & Company Report, 2023`,
   },
   {
     img: "/group/excellence.webp",
     title: "Commitment to Excellence",
-    description: `By making strategic developments in modern technology and digital innovations, Falic Group aims to always be one step ahead to disrupt traditional markets. Omnichannel experiences and partnerships with world-class brands, distributors and talent is part of our commitment to excellence.`,
+    description: `Falic Group is dedicated to staying ahead of the curve by embracing modern technology and digital innovations to disrupt traditional markets. Our commitment to excellence is reflected in our omnichannel experiences and our strategic partnerships with world-class brands, distributors, and talent.`,
   },
 ];
 
@@ -82,10 +82,10 @@ export default function Group() {
           </div>
           <div className="w-full md:w-1/2 flex gap-8 flex-col">
             <p>
-              Falic Group, founded in 2001 by brothers Jerome, Leon, and Simon Falic, has grown into a leading force in luxury. Starting with Duty Free Americas, now the largest travel retailer in the Western Hemisphere, the group has expanded into nine diverse sectors, launching over 50 successful businesses and becoming a trusted partner for the world&apos;s leading luxury brands.
+              Founded in 2001 by brothers Jerome, Leon, and Simon Falic, Falic Group has emerged as a global powerhouse in the luxury sector. Beginning with Duty Free Americas, the largest travel retailer in the Americas, the group has successfully expanded into nine diverse sectors, with presence in markets worldwide and becoming a trusted partner to the world&apos;s leading brands.
             </p>
             <p>
-              Now in its second generation, the Falic family continues to drive the group&apos;s global success, renowned for its unparalleled expertise in global markets and commitment to innovation, fast growth and excellence. As a family devoted to philanthropy, the Falic Family Foundation is steadfast in its commitment to making a meaningful impact on global communities.
+              Now in its second generation, the Falic family continues to propel the group’s global success, celebrated for their unmatched expertise in international markets and dedication to innovation, rapid growth, and excellence. Committed to philanthropy, the Falic Family Foundation works tirelessly to create a positive impact on communities around the globe.
             </p>
           </div>
         </div>
