@@ -47,17 +47,17 @@ export default function Group() {
       <Hero bg="/foundation/hero.webp">
         <h1>Falic Family Foundation</h1>
       </Hero>
-      <section className="bg-secondary p-10 md:p-20 flex flex-col gap-y-10 text-center items-center">
+      <section className="p-10 md:p-20 flex flex-col gap-y-10 text-center items-center">
         <Image src="/foundation/icon.webp" height="164" width="179" alt="The Falic Foundation" />
         <p className="w-full text-center md:w-5/6 text-xl">
         &ldquo;As a group, we are dedicated to forging exceptional brand partnerships and delivering results at scale. Our experience in founding Duty Free Americas has equipped us with valuable insights into fast growth and innovation. One of our greatest privileges is the ability to give back to causes that are close to our hearts. Through the Falic Family Foundation, we support various charitable organisations both in the United States and internationally, making a meaningful impact in diverse communities.&rdquo;
         </p>
         <div>
           <p className="uppercase">-Jerome Falic</p>
-          <p className="font-montserrat font-thin text-sm">DFA CEO & PRINCIPAL OF FALIC FAMILY FOUNDATION</p>
+          <p className="text-sm">DFA CEO & PRINCIPAL OF FALIC FAMILY FOUNDATION</p>
         </div>
       </section>
-      <section className="bg-primary flex justify-center p-8 lg:p-20">
+      <section className="flex justify-center p-8 lg:p-20">
         <div className="max-w-screen-xl flex flex-wrap">
           {events && events.map(event => (
             <div key={event.title} className="w-full md:w-1/2 lg:w-1/3">

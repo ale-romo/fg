@@ -1,14 +1,17 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/HeroVideo";
 import Image from "next/image";
 import ColCard from "@/components/ColCard";
 import RowCard from "@/components/RowCard";
 import { getNews } from "@/lib/getNews";
+import ButtonA from "@/components/ButtonA";
+import Jeromes from "@/components/Jeromes";
 
 const news = getNews();
 
 const content = {
   hero: {
     title: "Falic Group",
+    subtitle: "Leaders in travel retail, luxury goods and global distribution since 2001.",
   },
   we: {
     title: "Who we are",
@@ -17,14 +20,14 @@ const content = {
   },
   houses: {
     title: "Houses",
-    img: "/homepage/houses.webp",
+    img: "/homepage/houses.jpg",
     desc: "Across our 9 distinguished global Houses, we proudly encapsulate a rich tapestry of heritage, boundless innovation, and unparalleled luxury.",
     aid: 'houses',
     btnText: "Learn more",
   },
   group: {
     title: "Falic Group",
-    img: "/homepage/group.webp",
+    img: "/homepage/group.jpg",
     desc: `Established in 2001, Falic Group is a family-owned and operated business home
     to a number of prestigious brands across nine Houses. Known for our unrivalled
     expertise in global markets and commitment to excellence, Falic Group is
@@ -35,7 +38,7 @@ const content = {
   },
   foundation: {
     title: "FALIC FAMILY FOUNDATION",
-    img: "/foundation/hero.webp",
+    img: "homepage/foundation.png",
     desc: "DFA Golf Day 2023 raising $1 million to fight cancer wins ‘Best Example of Community Engagement’ Award at The Moodies 2023 Travel Journey Omnichannel Awards",
     aid: "/foundation",
     btnText: "Learn more",
@@ -45,17 +48,18 @@ const content = {
 export default function Home() {
   return (
     <>
-      <Hero bg="/homepage/hero.webp">
-        <h1 className="uppercase">{content.hero.title}</h1>
+      <Hero bg="/homepage/hero.mp4">
+        <h1 className="font-garamond">{content.hero.title}</h1>
+        <p className="text-sm w-60">{content.hero.subtitle}</p>
       </Hero>
-     <section className="text-white bg-primary w-full flex flex-col items-center p-8 pb-0 md:pb-0 md:p-20">
-        <h2>{content.we.title}</h2>
+     <section className="text-primary w-full flex flex-col items-center p-8 pb-10 md:pb-20 md:p-0">
+        <h2 className="">{content.we.title}</h2>
         <p className="text-center text-lg pb-10  max-w-screen-xl">{content.we.text}</p>
-        <div className="relative w-full h-v20 -mb-12 md:h-v50 md:-mb-60">
-          <Image src="/homepage/we.webp" alt="" fill className="object-contain" />
+        <div className="relative w-full">
+          <Image src="/homepage/we.jpg" alt="" width="0" height="0" className="object-contain w-full" />
         </div>
       </section>
-      <section className="flex flex-wrap home-padded">
+      <section className="flex flex-wrap mb-20">
         {news.slice(0, 2).map(
           (article: any, i: number) => {
             const props = {
@@ -68,13 +72,9 @@ export default function Home() {
             return (
               <div
                 key={i}
-                className={`lg:w-1/2 flex ${
-                  Math.floor(i / 2) + (i % 2) === 0
-                    ? "bg-white lg:justify-end"
-                    : "bg-secondary lg:justify-start"
-                }`}
+                className={`lg:w-1/2 flex lg:first:pr-4 lg:last:pl-4`}
               >
-                <div className="lg:max-w-screen-sm">
+                <div className="w-full">
                   <ColCard {...props} />
                 </div>
               </div>
@@ -83,33 +83,26 @@ export default function Home() {
           { start: 1 }
         )}
       </section>
-      <div className="w-full bg-primary p-8 md:p-20 flex flex-col items-center">
-        <div className="relative w-full h-v30 -mt-44 md:h-v40">
-          <Image src="/homepage/Dior.webp" alt="" fill className="object-contain" />
+      <section className="w-full m-8 md:mx-0 md:mt-20 md:mb-40 flex flex-col items-center bg-accent/20 max-w-full">
+        <div className="w-full -my-20" style={{maxWidth: ' 1120px'}}>
+          <Image src="/homepage/Dior.webp" alt="" width="0" height="0" className="w-full h-auto" />
         </div>
-      </div>
+      </section>
       <section className="flex flex-col lg:flex-row">
-        <div className="w-full flex bg-white lg:justify-end">
-          <div className="lg:max-w-screen-sm">
-            <ColCard {...content.group} />
-          </div>
+        <div className="w-full flex lg:justify-end lg:w-1/2 lg:pr-4">
+          <ColCard fancy {...content.group} />
         </div>
-        <div className="w-full flex bg-secondary lg:justify-start">
-          <div className="lg:max-w-screen-sm">
-            <ColCard {...content.houses} />
-          </div>
+        <div className="w-full flex lg:justify-start lg:w-1/2 lg:pl-4" >
+          <ColCard fancy {...content.houses} />
         </div>
       </section>
-      <section className="bg-primary text-white">
-        <RowCard {...content.foundation} />
+      <section className="">
+        <Image src={content.foundation.img} width="0" height="0" className="w-full h-auto" alt={content.foundation.title} />
+        <h2 className="text-center">{content.foundation.title}</h2>
+        <p className="text-center text-lg pb-10  max-w-screen-xl font.garamond">{content.foundation.desc}</p>
+        <ButtonA href={content.foundation.aid}>{content.foundation.btnText}</ButtonA>
       </section>
-      <section className="text-center text-xl">
-        <div className="p-12 md:pt-20 pb-0 bg-secondary flex items-center flex-col">
-          <p className="mb-8 max-w-screen-md">“As a group, we are committed to forging the best brand partnerships and delivering results at scale. Our experience founding Duty Free Americas has taught us a lot about fast growth and innovation. One of the great privileges we have is to be able to give back to causes close to our heart, and with the Falic Family Foundation we support a number of charitable organisations in the United States and internationally, making a real difference to diverse communities”</p>
-          <p className="uppercase">-Jerome Falic</p>
-          <p className="font-montserrat font-thin text-sm">DFA CEO & PRINCIPAL OF FALIC FAMILY FOUNDATION</p>
-        </div>
-      </section>
+      <Jeromes />
     </>
   );
 }

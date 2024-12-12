@@ -1,4 +1,12 @@
 import './globals.css';
+import { Inter } from 'next/font/google';
+
+const contentFont = Inter({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-content',
+});
 
 import Navbar from '@/components/navbar';
 import Footer from '@/components/Footer';
@@ -14,9 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="m-0 bg-secondary">
-        <main>
-        <Navbar />
+      <body className={`${contentFont.variable} m-0`}>
+        <main className="flex flex-col items-center">
+          <Navbar />
           {children}
         </main>
         <Footer />

@@ -130,12 +130,10 @@ const Houses = () => {
             return (
               <div
                 key={i}
-                className={`${
-                  i % 2 === 0 ? "bg-secondary" : "bg-primary"
-                } flex flex-col gap-6 items-center text-center w-full p-8 md:p-20 md:py-10`}
+                className={`flex flex-col gap-6 items-center text-center w-full p-8 md:p-20 md:py-10`}
               >
                 <div className="w-4/5 max-w-screen-xl">
-                  <h2 className="font-montserrat font-semibold">{house.title}</h2>
+                  <h2 className="">{house.title}</h2>
                   <p>{house.desc}</p>
                 </div>
                 <ul className="flex flex-col md:flex-row w-full max-w-screen-lg">

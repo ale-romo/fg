@@ -1,7 +1,7 @@
 const data = [
   {
     aid: "sample-1",
-    img: "/news/news-1.webp",
+    img: "/news/news-1.png",
     title: "Wines & Spirits",
     category: "",
     date: "",
@@ -9,7 +9,7 @@ const data = [
   },
   {
     aid: "sample-2",
-    img: "/news/news-2.webp",
+    img: "/news/news-2.png",
     title: "Wines & Spirits",
     category: "",
     date: "",

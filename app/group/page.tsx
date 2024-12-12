@@ -75,7 +75,7 @@ export default function Group() {
           </div>
         ))}
       </div>
-      <section className="bg-secondary p-8 md:p-20 flex justify-center">
+      <section className="p-8 md:p-20 flex justify-center">
         <div className="flex flex-col md:flex-row gap-8 gap-x-20 max-w-screen-xl">
           <div className="w-full md:w-1/2">
             <Image src="/homepage/group.webp" width="492" height="329" className="w-full h-auto" alt="Falic brothers" />
@@ -90,8 +90,8 @@ export default function Group() {
           </div>
         </div>
       </section>
-      <section className="py-10 md:py-20 flex flex-col items-center bg-primary">
-        <h2 className="text-center text-white mb-4 font-semibold">
+      <section className="py-10 md:py-20 flex flex-col items-center">
+        <h2 className="text-center mb-4 font-semibold">
           Our Values
         </h2>
         {values.map((value, i) => (

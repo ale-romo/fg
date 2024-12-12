@@ -4,31 +4,40 @@
 
 @layer base {
   :root {
-    --color-primary: 177 143 97;
-    --color-secondary: 235 223 221;
-    --color-accent: 10 24 49;
+    --color-primary: 17 24 39;
+    --color-secondary: 251 251 249;
+    --color-accent: 177 143 97;
 
     /* ... */
   }
 }
 
 @font-face {
-  font-family: "Caslon";
-  src: url('../public/fonts/Caslon540LTStd-Roman.woff2');
+  font-family: "Garamond";
+  src: url('../public/fonts/GaramondPremrPro-Med.woff');
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Montserrat";
-  src: url('../public/fonts/Montserrat-VariableFont_wght.ttf');
+  font-family: "Garamond";
+  src: url('../public/fonts/GaramondPremrPro-SmbdSubh.woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
 html {
-  font-size: 20px;
+  font-size: 16px;
+  @apply bg-secondary;
 }
 
 * {
   color: inherit;
   border-color: inherit;
-  font-family: Caslon;
+  @apply font-content;
+}
+
+section {
+  max-width: 1120px;
 }
 
 a {
@@ -36,44 +45,27 @@ a {
 }
 
 h1 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: normal;
-  text-align: center;
+  @apply font-normal;
+  font-size: 5rem;
   @media screen and (min-width: 768px) {
-    font-size: 3.5rem;
+    font-size: 8rem;
   }
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 3rem;
+  @apply font-garamond;
   line-height: 1.2;
   padding-bottom: 1.5rem;
   margin-bottom: 0;
-  text-transform: uppercase;
   @media screen and (min-width: 768px) {
-    font-size: 2.1rem;
+    font-size: 4rem;
   }
 }
 
 h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-family: "Montserrat";
-}
-
-.home-padded > div:first-child {
-  padding-top: 4rem;
-  @media screen and (min-width: 768px) {
-    padding-top: 12rem;
-  }
-}
-.home-padded > div:last-child {
-  padding-bottom: 8rem;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 4rem;
-  }
+  font-size: 2.2rem;
+  font-weight: 400;
 }
 
 .home-padded > div, .home-padded > div:first-child, .home-padded > div:last-child {
@@ -86,4 +78,11 @@ h3 {
   height: 100vh;
   overflow: hidden;
   max-height: 100vh;
+}
+
+.jeromes {
+  * {
+    background-size: auto 100%;
+    background-position: center;
+  }
 }

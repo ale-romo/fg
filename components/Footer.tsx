@@ -20,7 +20,7 @@ const Footer = () => {
   </ul>
  );
 
-  return <section className="flex flex-col py-8 lg:py-20 bg-secondary">
+  return <section className="flex flex-col py-8 lg:py-20">
     <Image src="/footer.webp" height="381" width="1200"  alt="Falic Group" className="w-full max-w-full h-full" />
     <div className="flex flex-col lg:flex-row justify-between gap-8  pt-8 px-8 lg:pt-10 lg:px-20 items-center text-sm">
       <div className="flex flex-row flex-wrap gap-x-12">

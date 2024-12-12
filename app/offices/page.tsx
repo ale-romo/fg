@@ -90,12 +90,12 @@ const Offices = () => {
       <Hero bg="/offices/hero.webp">
         <h1>Our offices</h1>
       </Hero>
-      <section className="flex flex-col items-center bg-secondary justify-center">
+      <section className="flex flex-col items-center justify-center">
         <RowCard {...where} />
       </section>
-      <section className="bg-primary flex flex-col justify-center overflow-hidden relative p-8 lg:p-20">
-        <h2 className="bg-secondary w-full text-center py-10 font-montserrat font-semibold">Worldwide locations</h2>
-        <ul className="flex flex-wrap bg-secondary w-full px-4 md:px-8 pb-6 md:pb-16 lg:pb-28 lg:px-20">
+      <section className="flex flex-col justify-center overflow-hidden relative p-8 lg:p-20">
+        <h2 className="w-full text-center py-10 font-semibold">Worldwide locations</h2>
+        <ul className="flex flex-wrap w-full px-4 md:px-8 pb-6 md:pb-16 lg:pb-28 lg:px-20">
           <RenderItems start={0} end={6} />
           <RenderItems start={6} end={13} />
           <RenderItems start={13} end={19} />

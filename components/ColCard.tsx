@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FC } from 'react';
 import Image from "next/image";
 import ButtonA from "./ButtonA";
@@ -11,23 +10,24 @@ interface Props {
   date?: string,
   desc?: string,
   btnText?: string,
+  fancy?: boolean,
 }
 
-const ColCard: FC<Props> = ({title, category, date, img, aid, desc, btnText}: Props) => {
+const ColCard: FC<Props> = ({title, category, date, img, aid, desc, btnText, fancy}: Props) => {
   const link = `/${aid}`;
 
   return (
-    <div className="p-8 md:p-20">
-      <div className="flex flex-col gap-y-4">
-        <Image className="w-full h-auto" src={img} alt={title} height="334" width="763" />
-        <h3>{title}</h3>
+    <div className={`${fancy ? 'bg-white rounded p-2 drop-shadow-2xl': ''}`}>
+      <Image className={`w-full h-auto rounded ${fancy ? 'rounded': ''}`} src={img} alt={title} height="334" width="763" />
+      <div className={`flex flex-col gap-y-4 ${fancy ? 'p-8' : ''}`}>
+        <h3 className="font-garamond">{title}</h3>
         {category && date && <p className="text-gray-500">{category}<br />{date}</p>}
-        {desc && <p>{desc}</p>}
+        {desc && <p style={{ color: "#6B7280"}}>{desc}</p>}
+        {btnText &&
+          <div className="mt-10">
+            <ButtonA  href={link}>{btnText}</ButtonA>
+          </div>}
       </div>
-      {btnText &&
-        <div className="mt-10">
-          <ButtonA  href={link}>{btnText}</ButtonA>
-        </div>}
     </div>
   );
 }

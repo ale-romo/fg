@@ -43,7 +43,7 @@ const House = ({ params: { hid } }: Params) => {
           })}
         </div>
       </section>
-      <section className="bg-primary text-white flex flex-col p-10 md:p-20 gap-y-12 text-center justify-center items-center">
+      <section className="flex flex-col p-10 md:p-20 gap-y-12 text-center justify-center items-center">
         <h2>Falic group partners</h2>
         <p className="w-1/2">{house.partners}</p>
         <div className="w-full h-v70 relative">
