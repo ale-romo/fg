@@ -1,35 +1,23 @@
 "use client";
 
 import Image from "next/image";
-import { navItems } from './navbar';
+import { navItems } from "./navbar";
 import Link from "next/link";
 
-interface NavProps {
-  start: number;
-  end: number;
-}
 
 const Footer = () => {
 
-  const RenderNavItems = ({ start, end} : NavProps) => ( <ul className="uppercase">
-    {navItems && navItems.slice(start, end).map(navItem => (
-      <li key={navItem.href}>
-        <Link href={navItem.href}>{navItem.title}</Link>
-      </li>
-    ))}
-  </ul>
- );
-
-  return <section className="flex flex-col py-8 lg:py-20">
-    <Image src="/footer.webp" height="381" width="1200"  alt="Falic Group" className="w-full max-w-full h-full" />
-    <div className="flex flex-col lg:flex-row justify-between gap-8  pt-8 px-8 lg:pt-10 lg:px-20 items-center text-sm">
-      <div className="flex flex-row flex-wrap gap-x-12">
-        <Image src="/logo.svg" height="65" width="246" alt="Falic Group" className="mb-10 lg:mb-0 h-auto w-auto" />
-        <RenderNavItems start={0} end={3} />
-        <RenderNavItems start={3} end={6} />
-      </div>
-      <p>CONTACT US: <a href="mailto:hello@falicgroup.com">hello@falicgroup.com</a></p>
+  return <section className="flex flex-col w-full items-center pb-8 lg:pb-14">
+    <Image src="/contact-monogram.svg" height="38" width="30"  alt="Contact us" className="mb-5" />
+    <p className="text-xs uppercase flex flex-col gap-2 items-center tracking-widest mb-24">
+      <span className="" style={{ color: "#9CA3AF"}}>CONTACT US</span>
+      <a href="mailto:hello@falicgroup.com" className="underline" style={{ color: "##1F2937" }}>hello@falicgroup.com</a>
+    </p>
+    <Image src="/logo-mono.svg" height="381" width="1200"  alt="Falic Group" className="w-full max-w-full h-full pb-16" />
+    <div className="flex flex-col lg:flex-row justify-between px-8 lg:px-20 items-center text-xs uppercase gap-8 pb-16" style={{ color: "##1F2937" }}>
+      {navItems.map((item, i) => <Link key={`footerNav-${i}`} href={item.href}>{item.title}</Link>)}
     </div>
+    <p className="text-xs tracking-widest" style={{ color: "#9CA3AF"}}>2025</p>
   </section>
 }
 

@@ -1,32 +1,4 @@
 import Hero from "@/components/Hero";
-import ButtonB from "@/components/ButtonB";
-
-const positions = [
-  {
-    title: "Data Science Engineer, Geospatial",
-    date: "09/25/2023",
-    type: "Fixed Term",
-    department: "Sales_Chepi_Channel",
-    location: "Asia -  Mainland China - Beijing",
-    btnText: "Coming soon"
-  },
-  {
-    title: "Data Science Engineer, Geospatial",
-    date: "09/25/2023",
-    type: "Fixed Term",
-    department: "Sales_Chepi_Channel",
-    location: "Asia -  Mainland China - Beijing",
-    btnText: "Coming soon"
-  },
-  {
-    title: "Data Science Engineer, Geospatial",
-    date: "09/25/2023",
-    type: "Fixed Term",
-    department: "Sales_Chepi_Channel",
-    location: "Asia -  Mainland China - Beijing",
-    btnText: "Coming soon"
-  },
-];
 
 const Careers = () => {
   return (

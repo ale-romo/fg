@@ -39,7 +39,7 @@ import { usePathname } from "next/navigation";
     cb: () => void;
   }
 
-  const NavItem = ({ href, title, current, cb }: NavItemsProps) => (
+  export const NavItem = ({ href, title, current, cb }: NavItemsProps) => (
     <Link
       key={href}
       href={href}

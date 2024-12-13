@@ -17,15 +17,15 @@ const ColCard: FC<Props> = ({title, category, date, img, aid, desc, btnText, fan
   const link = `/${aid}`;
 
   return (
-    <div className={`${fancy ? 'bg-white rounded p-2 drop-shadow-2xl': ''}`}>
-      <Image className={`w-full h-auto rounded ${fancy ? 'rounded': ''}`} src={img} alt={title} height="334" width="763" />
-      <div className={`flex flex-col gap-y-4 ${fancy ? 'p-8' : ''}`}>
-        <h3 className="font-garamond">{title}</h3>
+    <div className={`flex flex-col ${fancy ? 'bg-white rounded p-2 drop-shadow-2xl': ''}`}>
+      <Image className={`w-full h-auto rounded mb-10 ${fancy ? 'rounded': ''}`} src={img} alt={title} height="334" width="763" />
+      <div className={`flex flex-col gap-y-4 flex-grow ${fancy ? 'p-8' : ''}`}>
+        <h3>{title}</h3>
         {category && date && <p className="text-gray-500">{category}<br />{date}</p>}
         {desc && <p style={{ color: "#6B7280"}}>{desc}</p>}
         {btnText &&
-          <div className="mt-10">
-            <ButtonA  href={link}>{btnText}</ButtonA>
+          <div className="mt-10 flex flex-grow items-end">
+            <ButtonA  href={link} secondary>{btnText}</ButtonA>
           </div>}
       </div>
     </div>

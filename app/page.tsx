@@ -15,7 +15,7 @@ const content = {
   },
   we: {
     title: "Who we are",
-    text: "Renowned for its unparalleled global expertise and commitment to excellence, the Falic Group was founded in 2001 as a family-run organisation operating businesses across nine sectors: retail, wines & spirits, fragrance & cosmetics, fashion, interiors & licensing, real estate & hospitality, media, distribution, tobacco, and other activities. With a diverse team of over 6,000 employees spanning more than 21 countries, our global ecosystem includes more than 250 retail and e-commerce stores.",
+    text: "Renowned for its unparalleled global expertise and commitment to excellence, the Falic Group was founded in 2001 as a family-run organisation operating businesses across eight sectors: Retail, Wines & Spirits, Fragrance & Cosmetics, Fashion & Interiors, Real Estate, Hospitality & Food & Beverages, Media, Distribution, Licenses & Other Activities.",
     img: "/homepage/we.webp",
   },
   houses: {
@@ -37,7 +37,7 @@ const content = {
     btnText: "Learn more",
   },
   foundation: {
-    title: "FALIC FAMILY FOUNDATION",
+    title: "Falic Family Foundation",
     img: "homepage/foundation.png",
     desc: "DFA Golf Day 2023 raising $1 million to fight cancer wins ‘Best Example of Community Engagement’ Award at The Moodies 2023 Travel Journey Omnichannel Awards",
     aid: "/foundation",
@@ -52,14 +52,14 @@ export default function Home() {
         <h1 className="font-garamond">{content.hero.title}</h1>
         <p className="text-sm w-60">{content.hero.subtitle}</p>
       </Hero>
-     <section className="text-primary w-full flex flex-col items-center p-8 pb-10 md:pb-20 md:p-0">
-        <h2 className="">{content.we.title}</h2>
-        <p className="text-center text-lg pb-10  max-w-screen-xl">{content.we.text}</p>
-        <div className="relative w-full">
-          <Image src="/homepage/we.jpg" alt="" width="0" height="0" className="object-contain w-full" />
-        </div>
+     <section className="text-primary w-full flex flex-col items-center p-8 pb-10 md:my-24 md:p-0">
+        <Image src="/fg-monogram.svg" width="263" height="27" alt={content.we.title} className="mb-16" />
+        <h2 className="mb-12">{content.we.title}</h2>
+        <p className="text-center text-4xl pb-14  max-w-screen-xl font-garamond">{content.we.text}</p>
+        <Image src="/homepage/we.jpg" alt="" width="0" height="0" className="object-contain w-full mb-12" />
+        <p className="max-w-screen-md text-2xl font-garamond text-center" style={{ color: "#9CA3AF" }}>With a diverse team of over 6,000 employees spanning more than 21 countries, our global ecosystem includes more than 250 retail and e-commerce stores.</p>
       </section>
-      <section className="flex flex-wrap mb-20">
+      <section className="flex flex-wrap mb-24">
         {news.slice(0, 2).map(
           (article: any, i: number) => {
             const props = {
@@ -88,7 +88,11 @@ export default function Home() {
           <Image src="/homepage/Dior.webp" alt="" width="0" height="0" className="w-full h-auto" />
         </div>
       </section>
-      <section className="flex flex-col lg:flex-row">
+      <section className="text-center">
+        <h3>Retail</h3>
+        <p className="max-w-screen-sm mb-24" style={{ color: '#6B7280' }}>Duty Free Americas launches into train retail channel in partnership with Adani Airport Holdings Limited, starting with operating Eurotunnel Terminal.</p>
+      </section>
+      <section className="flex flex-col lg:flex-row mb-32">
         <div className="w-full flex lg:justify-end lg:w-1/2 lg:pr-4">
           <ColCard fancy {...content.group} />
         </div>
@@ -96,9 +100,10 @@ export default function Home() {
           <ColCard fancy {...content.houses} />
         </div>
       </section>
-      <section className="">
-        <Image src={content.foundation.img} width="0" height="0" className="w-full h-auto" alt={content.foundation.title} />
-        <h2 className="text-center">{content.foundation.title}</h2>
+      <section className="mb-24 flex flex-col items-center">
+        <Image src={content.foundation.img} width="0" height="0" className="w-full h-auto mb-14" alt={content.foundation.title} />
+        <Image src="/foundation-monogram.svg" width="263" height="33" alt={content.we.title} className="mb-14" />
+        <h2 className="text-center mb-10">{content.foundation.title}</h2>
         <p className="text-center text-lg pb-10  max-w-screen-xl font.garamond">{content.foundation.desc}</p>
         <ButtonA href={content.foundation.aid}>{content.foundation.btnText}</ButtonA>
       </section>

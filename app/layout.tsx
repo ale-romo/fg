@@ -26,8 +26,8 @@ export default function RootLayout({
         <main className="flex flex-col items-center">
           <Navbar />
           {children}
+          <Footer />
         </main>
-        <Footer />
       </body>
     </html>
   )
