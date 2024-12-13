@@ -19,16 +19,16 @@ import { usePathname } from "next/navigation";
       title: "News",
     },
     {
-      href: "/offices",
-      title: "Offices",
+      href: "/foundation",
+      title: "Foundation",
     },
     {
       href: "/careers",
       title: "Careers",
     },
     {
-      href: "/foundation",
-      title: "Foundation",
+      href: "/offices",
+      title: "Offices",
     },
   ];
 

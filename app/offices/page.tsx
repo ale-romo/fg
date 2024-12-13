@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import Jeromes from "@/components/Jeromes";
 import RowCard from "@/components/RowCard";
 import Image from "next/image";
 
@@ -104,6 +105,7 @@ const Offices = () => {
       <div className="-mt-14 md:-mt-24 lg:-mt-40 w-2/3 mx-auto relative">
         <Image src="/offices/store.webp" height="370" width="787" alt="" className="w-full h-auto z-10" />
       </div>
+      <Jeromes />
     </>
   );
 };

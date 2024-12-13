@@ -34,8 +34,7 @@ export default function News() {
             img: article.img,
           }
           return <div key={i} className={`flex w-full lg:w-1/2`}>
-            <div className={`flex w-full ${i % 2 === 0  ? "lg:pr-2" : "lg:pl-2"
-          }`}>
+            <div className={`flex w-full ${i % 2 === 0  ? "lg:pr-2" : "lg:pl-2"}`}>
               <ColCard fancy  {...props} />
             </div>
           </div>

@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import Jeromes from "@/components/Jeromes";
 
 const Careers = () => {
   return (
@@ -23,6 +24,7 @@ const Careers = () => {
           LOOKING FOR A CAREER WITH FALIC GROUP? CONTACT US AT <a href="mailto:hello@falicgroup.com" className="underline uppercase font-semibold hover:text-primary">HELLO@FALICGROUP.COM</a>
         </p>
       </section>
+      <Jeromes />
     </>
   );
 };

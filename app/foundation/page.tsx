@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Image from "next/image";
 import EventCard from "@/components/EventCard";
+import ColCard from "@/components/ColCard";
 
 const events = [
   {
@@ -58,10 +59,12 @@ export default function Group() {
         </div>
       </section>
       <section className="flex justify-center p-8 lg:p-20">
-        <div className="max-w-screen-xl flex flex-wrap">
-          {events && events.map(event => (
-            <div key={event.title} className="w-full md:w-1/2 lg:w-1/3">
-              <EventCard {...event} />
+        <div className="flex flex-wrap my-24 gap-y-12">
+          {events && events.map((event, i) => (
+            <div key={event.title} className="flex w-full md:w-1/2">
+              <div className={`flex w-full ${i % 2 === 0  ? "lg:pr-2" : "lg:pl-2"}`}>
+                <ColCard fancy {...event} />
+              </div>
             </div>
           ))}
         </div>
