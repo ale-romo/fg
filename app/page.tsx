@@ -1,7 +1,6 @@
 import Hero from "@/components/HeroVideo";
 import Image from "next/image";
 import ColCard from "@/components/ColCard";
-import RowCard from "@/components/RowCard";
 import { getNews } from "@/lib/getNews";
 import ButtonA from "@/components/ButtonA";
 import Jeromes from "@/components/Jeromes";

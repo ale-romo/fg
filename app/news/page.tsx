@@ -1,15 +1,10 @@
 import { getNews } from '@/lib/getNews';
 import ColCard from "@/components/ColCard";
 import Hero from "@/components/Hero";
+import Jeromes from '@/components/Jeromes';
 
 export default function News() {
   const news = getNews();
-
-  const getBg = (i:number) => {
-    const pattern = ['bg-secondary', 'bg-white', 'bg-primary', 'bg-secondary'];
-    const patternIndex = i % pattern.length;
-    return pattern[patternIndex];
-  };
 
   const MAX_DESC_LENGTH = 200;
 
@@ -28,23 +23,25 @@ export default function News() {
   return (
     <>
       <Hero bg="/homepage/hero.webp">
-        <h1>News</h1>
+        <h1 className="font-garamond">News</h1>
+        <p className="text-sm w-60">Stay connected to the latest news, developments, and insights from each of the Falic Group’s 8 Houses.</p>
       </Hero>
-      <section className="flex flex-wrap">
+      <section className="flex flex-wrap my-24 gap-y-12">
         {news.map((article: any, i: number) => {
           const props = {
             title: article.title,
             desc: truncatedDesc(article.desc),
             img: article.img,
           }
-          return <div key={i} className={`flex w-full lg:w-1/2 ${getBg(i)}  ${i % 2 === 0  ? "lg:justify-end" : "lg:justify-start"
+          return <div key={i} className={`flex w-full lg:w-1/2`}>
+            <div className={`flex w-full ${i % 2 === 0  ? "lg:pr-2" : "lg:pl-2"
           }`}>
-            <div className={`flex lg:max-w-screen-sm`}>
-              <ColCard  {...props} />
+              <ColCard fancy  {...props} />
             </div>
           </div>
         }, {start:1})}
       </section>
+      <Jeromes />
     </>
   )
 }

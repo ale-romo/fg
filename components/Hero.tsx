@@ -12,7 +12,7 @@ const Hero: FC<Props> = ({bg, children}) => {
         <ActiveImg src={bg}/>
       </div>
     }
-    <div className="z-10 flex h-full w-full flex-col justify-center items-center text-white pointer-events-none">
+    <div className="z-10 flex h-full w-full flex-col justify-center items-start text-white pointer-events-none">
       {children}
     </div>
   </section>

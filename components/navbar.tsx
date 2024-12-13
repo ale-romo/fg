@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 
   export const navItems = [
     {
-      href: "/group",
+      href: "/",
       title: "Group",
     },
     {
