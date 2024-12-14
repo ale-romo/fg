@@ -22,7 +22,7 @@ export default function News() {
 
   return (
     <>
-      <Hero bg="/homepage/hero.webp">
+      <Hero bg="/news/hero-news.jpg">
         <h1 className="font-garamond">News</h1>
         <p className="text-sm w-60">Stay connected to the latest news, developments, and insights from each of the Falic Group’s 8 Houses.</p>
       </Hero>
