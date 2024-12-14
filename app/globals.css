@@ -86,3 +86,8 @@ h3 {
     background-position: center;
   }
 }
+.quoted:before {
+  content: "“";
+  @apply text-9xl absolute -top-12 -left-6;
+  color: #E6DBC8;
+}
