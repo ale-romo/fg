@@ -22,6 +22,12 @@ const events = [
     aid: "/foundation"
   },
   {
+    img: "/foundation/golf22.webp",
+    title: "DFA Golf Day 2022",
+    desc: `Raised $375,000 for Mourning Family Foundation`,
+    aid: "/foundation"
+  },
+  {
     img: "/foundation/dimagio.webp",
     title: "Joe DiMaggio Children's Hospital",
     desc: `FFF raises money to support pediatric healthcare in Florida and beyond.`,
@@ -33,12 +39,7 @@ const events = [
     desc: `Raised $1 million to fight cancer.`,
     aid: "/foundation"
   },
-  {
-    img: "/foundation/golf22.webp",
-    title: "DFA Golf Day 2022",
-    desc: `Raised $375,000 for Mourning Family Foundation`,
-    aid: "/foundation"
-  }
+ 
 ];
 
 export default function Group() {

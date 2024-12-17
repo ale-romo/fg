@@ -108,7 +108,7 @@ const Offices = () => {
         </p>
       </section>
       <section className="w-full m-8 md:mx-0 md:mt-20 md:mb-40 flex flex-col items-center bg-accent/20 max-w-full">
-        <div className="w-full -my-20" style={{ maxWidth: " 1120px" }}>
+        <div className="w-full my-0 lg:-my-20" style={{ maxWidth: " 1120px" }}>
           <Image
             src="/offices/offices-beach.jpg"
             alt=""
@@ -118,7 +118,7 @@ const Offices = () => {
           />
         </div>
       </section>
-      <section className="flex flex-col justify-center relative mb-20">
+      <section className="flex flex-col justify-center relative mb-20 px-5 md:px-10 lg:px-0">
         <ul className="flex flex-wrap w-full px-4 md:px-8 pb-6 md:pb-16 lg:pb-28 lg:px-20 linear-gradient(to bottom, #FBFBF9, #FFFFFF) p-20 rounded border-white border-4 shadow-2xl">
           <h3 className="w-full text-center text-6xl pb-12">
             Worldwide Locations
