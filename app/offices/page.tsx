@@ -1,6 +1,5 @@
 import Hero from "@/components/Hero";
 import Jeromes from "@/components/Jeromes";
-import RowCard from "@/components/RowCard";
 import Image from "next/image";
 
 const offices = [
@@ -64,11 +63,11 @@ const offices = [
 ];
 
 const where = {
-  title: "Where are we?",
+  title: "Where We Are",
   desc: "Falic Group is headquartered in Miami, Florida, with a strong international presence that includes offices in Bogota, London, Los Angeles, Macau, Mexico City, Montevideo, New York, Panama City, Paris, Punta Cana, Rio de Janeiro, San Juan, Singapore, and Tel Aviv. Our diverse team of over 6,000 individuals worldwide drives our commitment to excellence and innovation across all markets.",
-  img: "/offices/building.webp",
+  img: "/offices/hero-offices.jpg",
   reverse: true,
-}
+};
 
 interface ItemProps {
   start: number;
@@ -88,22 +87,42 @@ const Offices = () => {
 
   return (
     <>
-      <Hero bg="/offices/hero.webp">
-        <h1 className="font-garamond">Our offices</h1>
+      <Hero bg="/offices/hero-offices.jpg">
+        <h1 className="font-garamond">Our Offices</h1>
+        <p className="text-sm w-60 md:w-[307px] lg:w-[307px]">
+          The Falic Group operates from strategically located offices around the
+          world, reflecting our global reach and commitment to excellence.
+        </p>
       </Hero>
       <section className="flex flex-col items-center justify-center my-20">
-        <Image src="/fg-monogram.svg" width="263" height="27" alt={where.title} className="mb-16" />
+        <Image
+          src="/fg-monogram.svg"
+          width="263"
+          height="27"
+          alt={where.title}
+          className="mb-16"
+        />
         <h2 className="mb-12">{where.title}</h2>
-        <p className="text-center font-garamond text-2xl lg:text-3xl leading-relaxed px-12 md:px-20 lg:px-0">{where.desc}</p>
+        <p className="text-center font-garamond text-2xl lg:text-3xl leading-relaxed px-12 md:px-20 lg:px-0">
+          {where.desc}
+        </p>
       </section>
       <section className="w-full m-8 md:mx-0 md:mt-20 md:mb-40 flex flex-col items-center bg-accent/20 max-w-full">
-        <div className="w-full -my-20" style={{maxWidth: ' 1120px'}}>
-          <Image src="/offices/offices-beach.jpg" alt="" width="0" height="0" className="w-full h-auto" />
+        <div className="w-full -my-20" style={{ maxWidth: " 1120px" }}>
+          <Image
+            src="/offices/offices-beach.jpg"
+            alt=""
+            width="0"
+            height="0"
+            className="w-full h-auto"
+          />
         </div>
       </section>
       <section className="flex flex-col justify-center relative mb-20">
         <ul className="flex flex-wrap w-full px-4 md:px-8 pb-6 md:pb-16 lg:pb-28 lg:px-20 linear-gradient(to bottom, #FBFBF9, #FFFFFF) p-20 rounded border-white border-4 shadow-2xl">
-          <h3 className="w-full text-center text-6xl pb-12">Worldwide locations</h3>
+          <h3 className="w-full text-center text-6xl pb-12">
+            Worldwide Locations
+          </h3>
           <RenderItems start={0} end={6} />
           <RenderItems start={6} end={13} />
           <RenderItems start={13} end={19} />

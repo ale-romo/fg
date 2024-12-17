@@ -18,8 +18,8 @@ const ColCard: FC<Props> = ({title, category, date, img, aid, desc, btnText, fan
 
   return (
     <div className={`flex flex-col w-full ${fancy ? 'bg-white rounded p-2 drop-shadow-2xl': ''}`}>
-      <Image className={`w-full h-auto rounded mb-10 ${fancy ? 'rounded': ''}`} src={img} alt={title} height="334" width="763" />
-      <div className={`flex flex-col gap-y-4 mb-12 lg:mb-0 flex-grow ${fancy ? 'p-8' : ''}`}>
+      <Image className={`w-full h-auto rounded ${fancy ? 'rounded': 'mb-6'}`} src={img} alt={title} height="334" width="763" />
+      <div className={`flex flex-col gap-y-4 mb-12 lg:mb-12 flex-grow ${fancy ? 'p-6 lg:p-8' : ''}`}>
         <h3>{title}</h3>
         {category && date && <p className="text-gray-500">{category}<br />{date}</p>}
         {desc && <p style={{ color: "#6B7280"}}>{desc}</p>}

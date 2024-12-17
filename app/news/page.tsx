@@ -24,23 +24,35 @@ export default function News() {
     <>
       <Hero bg="/news/hero-news.jpg">
         <h1 className="font-garamond">News</h1>
-        <p className="text-sm w-60">Stay connected to the latest news, developments, and insights from each of the Falic Group’s 8 Houses.</p>
+        <p className="text-sm w-80 md:w-[383px] lg:w-[383px]">
+          Stay connected to the latest news, developments, and insights from
+          each of the Falic Group’s 8 Houses.
+        </p>
       </Hero>
       <section className="flex flex-wrap my-24 gap-y-12">
-        {news.map((article: any, i: number) => {
-          const props = {
-            title: article.title,
-            desc: truncatedDesc(article.desc),
-            img: article.img,
-          }
-          return <div key={i} className={`flex w-full lg:w-1/2`}>
-            <div className={`flex w-full ${i % 2 === 0  ? "lg:pr-2" : "lg:pl-2"}`}>
-              <ColCard fancy  {...props} />
-            </div>
-          </div>
-        }, {start:1})}
+        {news.map(
+          (article: any, i: number) => {
+            const props = {
+              title: article.title,
+              desc: truncatedDesc(article.desc),
+              img: article.img,
+            };
+            return (
+              <div key={i} className={`flex w-full lg:w-1/2 px-10 lg:px-0`}>
+                <div
+                  className={`flex w-full ${
+                    i % 2 === 0 ? "lg:pr-2" : "lg:pl-2"
+                  }`}
+                >
+                  <ColCard fancy {...props} />
+                </div>
+              </div>
+            );
+          },
+          { start: 1 }
+        )}
       </section>
       <Jeromes />
     </>
-  )
+  );
 }

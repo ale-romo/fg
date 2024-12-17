@@ -10,18 +10,37 @@ const news = getNews();
 const content = {
   hero: {
     title: "Falic Group",
-    subtitle: "Leaders in travel retail, luxury goods and global distribution since 2001.",
+    subtitle:
+      "Leaders in travel retail, luxury goods and global distribution since 2001.",
   },
   we: {
-    title: "Who we are",
+    title: "Who We Are",
     text: "Renowned for its unparalleled global expertise and commitment to excellence, the Falic Group was founded in 2001 as a family-run organisation operating businesses across eight sectors: Retail, Wines & Spirits, Fragrance & Cosmetics, Fashion & Interiors, Real Estate, Hospitality & Food & Beverages, Media, Distribution, Licenses & Other Activities.",
     img: "/homepage/we.webp",
   },
+  news: [
+    {
+      aid: "sample-1",
+      img: "/homepage/news-1.webp",
+      title: "Wines & Spirits",
+      category: "",
+      date: "",
+      desc: "The Macallan and Duty Free Americas open first-of-it’s kind shop in Americas travel retail.",
+    },
+    {
+      aid: "sample-2",
+      img: "/homepage/news-2.png",
+      title: "Distribution",
+      category: "",
+      date: "",
+      desc: "UETA MEA launches with distribution across the Middle East and Africa, plus dedicated support for diplomatic missions.",
+    },
+  ],
   houses: {
     title: "Houses",
     img: "/homepage/houses.jpg",
     desc: "Across our 9 distinguished global Houses, we proudly encapsulate a rich tapestry of heritage, boundless innovation, and unparalleled luxury.",
-    aid: 'houses',
+    aid: "houses",
     btnText: "Learn more",
   },
   group: {
@@ -32,7 +51,7 @@ const content = {
     expertise in global markets and commitment to excellence, Falic Group is
     committed to growth and innovation in the name of our Houses and affiliated
     high quality producers.`,
-    aid: 'group',
+    aid: "group",
     btnText: "Learn more",
   },
   foundation: {
@@ -41,7 +60,7 @@ const content = {
     desc: "DFA Golf Day 2023 raising $1 million to fight cancer wins ‘Best Example of Community Engagement’ Award at The Moodies 2023 Travel Journey Omnichannel Awards",
     aid: "/foundation",
     btnText: "Learn more",
-  }
+  },
 };
 
 export default function Home() {
@@ -49,7 +68,9 @@ export default function Home() {
     <>
       <Hero bg="/homepage/hero.mp4">
         <h1 className="font-garamond">{content.hero.title}</h1>
-        <p className="text-sm w-60">{content.hero.subtitle}</p>
+        <p className="text-sm w-60 md:w-[291px] lg:w-[291px]">
+          {content.hero.subtitle}
+        </p>
       </Hero>
       <section className="text-primary w-full flex flex-col items-center p-8 pb-10 md:my-24 md:p-0">
         <Image
@@ -71,7 +92,8 @@ export default function Home() {
           className="object-contain w-full mb-12"
         />
         <p
-          className="max-w-screen-md text-2xl font-garamond text-center px-0 md:px-20 lg:px-0"  style={{ color: "#9CA3AF" }}
+          className="max-w-screen-md text-2xl font-garamond text-center px-0 md:px-20 lg:px-0"
+          style={{ color: "#9CA3AF" }}
         >
           With a diverse team of over 6,000 employees spanning more than 21
           countries, our global ecosystem includes more than 250 retail and
@@ -79,7 +101,7 @@ export default function Home() {
         </p>
       </section>
       <section className="flex flex-wrap mb-24 px-10 md:px-10 lg:px-0">
-        {news.slice(0, 2).map(
+        {content.news.slice(0, 2).map(
           (article: any, i: number) => {
             const props = {
               title: article.title,
@@ -105,9 +127,9 @@ export default function Home() {
       <section className="w-full m-8 md:mx-0 md:mt-20 md:mb-40 flex flex-col items-center bg-accent/20 max-w-full ">
         <div className="w-full -my-20 " style={{ maxWidth: " 1120px" }}>
           <Image
-            src="/homepage/Dior.webp"
+            src="/homepage/retail.png"
             alt=""
-            width="0"
+            width="0" 
             height="0"
             className="w-full h-auto"
           />

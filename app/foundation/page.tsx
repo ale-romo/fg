@@ -54,8 +54,8 @@ export default function Group() {
           difference worldwide.
         </p>
       </Hero>
-      <section className="m-10 md:my-20 flex flex-col md:flex-row items-start">
-        <div className="w-full md:w-1/3 flex justify-center md:justify-start items-start mb-8 md:mb-0">
+      <section className="mt-20 mb-10 md:mt-20 md:mb-20 px-12 lg:px-0 flex flex-col lg:flex-row items-start">
+        <div className="w-full lg:w-1/3 flex justify-center lg:justify-start items-start mb-8 lg:mb-0">
           <Image
             src="/foundation/icon.webp"
             height="164"
@@ -64,7 +64,7 @@ export default function Group() {
             className="md:ml-10"
           />
         </div>
-        <div className="w-full md:w-2/3 flex flex-col items-start">
+        <div className="w-full lg:w-2/3 flex flex-col items-start">
           <p className="w-full text-left font-garamond text-2xl quoted relative mb-12">
             As a group, we are committed to forging the best brand partnerships
             and delivering results at scale. Our experience founding Duty Free
