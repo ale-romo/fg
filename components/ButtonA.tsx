@@ -11,11 +11,7 @@ const ButtonA: FC<Props> = ({ href, children, secondary }) => (
   <Link
     href={href}
     target="_self"
-    className="inline-flex py-2 px-7 text-xl rounded font-garamond"
-    style={{
-      color: secondary ? '#92400E' : 'black',
-      backgroundColor: secondary ? '#F9FAFB' : '#E5E7EB',
-    }}
+    className="inline-flex py-2 px-7 text-xl rounded font-garamond transition-colors duration-300 hover:bg-[#ECE9E4] bg-[#E5E7EB]"
   >
     {children}
   </Link>

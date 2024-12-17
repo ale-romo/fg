@@ -13,7 +13,7 @@ const Footer = () => {
       <span className="" style={{ color: "#9CA3AF"}}>CONTACT US</span>
       <a href="mailto:hello@falicgroup.com" className="underline" style={{ color: "##1F2937" }}>hello@falicgroup.com</a>
     </p>
-    <Image src="/logo-mono.svg" height="381" width="1200"  alt="Falic Group" className="w-full max-w-full h-full pb-16" />
+    <Image src="/logo-mono.svg" height="381" width="1200"  alt="Falic Group" className="w-full max-w-full h-full pb-16 px-10 md:px-20 lg:px-0" />
     <div className="hidden sm:flex flex-row justify-between px-8 lg:px-20 items-center text-xs uppercase gap-8 pb-16" style={{ color: "##1F2937" }}>
       {navItems.map((item, i) => <Link key={`footerNav-${i}`} href={item.href}>{item.title}</Link>)}
     </div>

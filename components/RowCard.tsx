@@ -24,7 +24,7 @@ const RowCard: FC<Props> = ({title, img, aid, desc, btnText, reverse}: Props) =>
         {desc && <p>{desc}</p>}
         {btnText &&
           <div className="mt-10">
-            <ButtonA href={link} colors="text-white hover:text-primary hover:bg-white">{btnText}</ButtonA>
+            <ButtonA href={link}>{btnText}</ButtonA>
           </div>}
       </div>
     </div>

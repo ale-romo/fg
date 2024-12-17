@@ -60,7 +60,7 @@ export default function Home() {
           className="mb-16"
         />
         <h2 className="mb-12">{content.we.title}</h2>
-        <p className="text-center text-2xl lg:text-4xl pb-14  max-w-screen-xl font-garamond px-0 md:px-20 lg:px-2 text-[#4B5563]">
+        <p className="text-center text-2xl lg:text-3xl pb-14  max-w-screen-xl font-garamond px-0 md:px-20 lg:px-2 text-[#4B5563]">
           {content.we.text}
         </p>
         <Image

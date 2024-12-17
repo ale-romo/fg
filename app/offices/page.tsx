@@ -89,12 +89,12 @@ const Offices = () => {
   return (
     <>
       <Hero bg="/offices/hero.webp">
-        <h1>Our offices</h1>
+        <h1 className="font-garamond">Our offices</h1>
       </Hero>
       <section className="flex flex-col items-center justify-center my-20">
         <Image src="/fg-monogram.svg" width="263" height="27" alt={where.title} className="mb-16" />
         <h2 className="mb-12">{where.title}</h2>
-        <p className="text-center font-garamond text-3xl leading-relaxed">{where.desc}</p>
+        <p className="text-center font-garamond text-2xl lg:text-3xl leading-relaxed px-12 md:px-20 lg:px-0">{where.desc}</p>
       </section>
       <section className="w-full m-8 md:mx-0 md:mt-20 md:mb-40 flex flex-col items-center bg-accent/20 max-w-full">
         <div className="w-full -my-20" style={{maxWidth: ' 1120px'}}>
