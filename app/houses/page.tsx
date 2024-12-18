@@ -46,10 +46,10 @@ const data = {
       ],
     },
     {
-      title: "Fashion & Interiors",
-      desc: "Home to iconic brands such as Christian Lacroix, Reebok LATAM, Fendi Casa and Divano Mobilia, our Fashion &amp; Interiors division is dedicated to exceptional craftsmanship, innovation, and high-end design. From glamorous red carpets to exquisite home furnishings, our partners at Falic Group embody refinement and undeniable style. We also specialise in retail licensing, ensuring that these legacy names reach a wider audience while maintaining their prestigious reputation across LATAM.",
+      title: "Fashion, Interiors & Licensing",
+      desc: "Home to iconic brands such as Christian Lacroix, Reebok LATAM, Fendi Casa and Divano Mobilia, our Fashion & Interiors division is dedicated to exceptional craftsmanship, innovation, and high-end design. From glamorous red carpets to exquisite home furnishings, our partners at Falic Group embody refinement and undeniable style. We also specialise in retail licensing, ensuring that these legacy names reach a wider audience while maintaining their prestigious reputation across LATAM including The Macallan, CHANEL, Champion, Reebok and Fendi Casa.",
       images: [
-        "/houses/fashion-1.jpg",
+        "/houses/Fendi.png",
         "/houses/fashion-2.jpg",
         "/houses/fashion-3.jpg",
       ],
@@ -70,16 +70,12 @@ const data = {
     },
     {
       title: "Distribution",
-      desc: "Falic Group is the partner of choice for world leading brands looking for distribution across the US, LATAM, Middle East and Israel. Falic Group holds more than 30 distribution centres across 4 continents, not only in duty free but supplying duty paid operations, retail goods, fashion, furniture, alcohol distribution, cruise ships and fragrances.",
-      images: [
-        "/houses/distribution-1.jpg",
-        "/houses/distribution-2.jpg",
-        "/houses/distribution-3.jpg",
-      ],
+      desc: "Falic Group is the partner of choice for world leading brands looking for distribution across the US, LATAM, Israel, Middle East & Africa. Falic Group holds more than 30 distribution centres across 4 continents, not only in duty free but supplying duty paid operations, retail goods, fashion, furniture, alcohol distribution, cruise ships and fragrances.",
+      images: ["/houses/distributionmap.png"],
     },
     {
-      title: "Licences \n& Other Activities",
-      desc: "Falic Group proudly operates a diverse range of businesses, including partnerships with the world’s leading luxury brands such as Fendi Casa, The Macallan, Chanel, and Champion to expand their presence in LATAM. Other businesses include medical supplies, payment card services, and gas stations.",
+      title: "Other Activities",
+      desc: "Falic Group proudly operates a diverse range of businesses including medical supplies, payment card services, and gas stations.",
       images: [
         "/houses/other-1.jpg",
         "/houses/other-2.jpg",
@@ -159,7 +155,11 @@ const Houses = () => {
                     return (
                       <li
                         key={j}
-                        className="w-full lg:w-1/3 px-2 pb-4 md:pb-0 relative"
+                        className={`${
+                          house.title === "Distribution" 
+                            ? "w-full" 
+                            : "w-full lg:w-1/3"
+                        } px-2 pb-4 md:pb-0 relative`}
                       >
                         <Image
                           className="w-full h-auto"
