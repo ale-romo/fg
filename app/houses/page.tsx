@@ -77,9 +77,9 @@ const data = {
       title: "Other Activities",
       desc: "Falic Group proudly operates a diverse range of businesses including medical supplies, payment card services, and gas stations.",
       images: [
-        "/houses/other-1.jpg",
+       
         "/houses/other-2.jpg",
-        "/houses/other-3.jpg",
+        
       ],
     },
   ],
@@ -150,14 +150,16 @@ const Houses = () => {
                     {house.desc}
                   </p>
                 </div>
-                <ul className="flex flex-col md:flex-row w-full max-w-screen-lg">
+                <ul className="flex flex-col md:flex-row w-full max-w-screen-lg justify-center">
                   {house.images.map((img: string, j) => {
                     return (
                       <li
                         key={j}
                         className={`${
-                          house.title === "Distribution" 
-                            ? "w-full" 
+                          house.title === "Distribution"
+                            ? "w-full"
+                            : house.title === "Other Activities"
+                            ? "w-full lg:w-1/3"
                             : "w-full lg:w-1/3"
                         } px-2 pb-4 md:pb-0 relative`}
                       >
