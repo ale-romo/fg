@@ -8,7 +8,6 @@ const Jeromes = () => {
       <div className="text-sm">
         <p className="uppercase">Jerome Falic</p>
         <p className="mb-8" style={{ color: "#D5C5AC" }}>DFA CEO & PRINCIPAL OF FALIC FAMILY FOUNDATION</p>
-        <Image width="0" height="0" className="w-48 h-auto" alt="Jerome Falic" src="/Arthur_Miller_signature.svg" />
       </div>
     </div>
     <div className="flex-1 bg-red-400" style={{ backgroundImage: 'url(/jeromes/right.jpg)'}}></div>
